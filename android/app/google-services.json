@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "654803257325",
+    "project_id": "inspecasa-3525b",
+    "storage_bucket": "inspecasa-3525b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654803257325:android:df7ffa039023a93dc009e4",
+        "android_client_info": {
+          "package_name": "com.inspecasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654803257325-df8mdruicp7f67u91uph1fmq3kok3fp7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inspecasa",
+            "certificate_hash": "57d00af1ad576d2fcbf97975d3f02a1d17145ac5"
+          }
+        },
+        {
+          "client_id": "654803257325-vpbjjo4eqm97btilkhrpkd3qr698tmq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoaV_Xj7zPNi52Zmb9kaSMUx4JjgQ9-Yg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654803257325-2os0ac1ko85o5ept2skuh46vos49719b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

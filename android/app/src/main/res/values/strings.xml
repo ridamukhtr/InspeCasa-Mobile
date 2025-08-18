@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InspeCasa</string>
+    <string name="facebook_app_id">2091727017988020</string>
+    <string name="facebook_client_token">1d36b023465c2596e682cacfe7533d33</string>
+    <string name="fb_login_protocol_scheme">fb2091727017988020</string>
+</resources>
+    
