@@ -6,9 +6,9 @@ import Toast from 'react-native-toast-message';
 import {useFocusEffect, useNavigation} from '@react-navigation/native';
 import {RootState} from '../../types/types';
 import {SUBSCRIPTION_PLANS, SubscriptionPlan} from '../../data/Subscription';
+import {stripeKeys} from './useCustomHooks';
 
-const STRIPE_SECRET_KEY =
-  'sk_test_51Rh40D6zBQ3VWKCSIOJNc0qTqxwIkTnkgGqkwuoIRNIaIOzftviIlHT7kRKDxAi88iP4GdSWZ9QP8W6fDCboIBNN00LxOyyzZr';
+const STRIPE_SECRET_KEY = stripeKeys.secret;
 
 export const useSubscription = () => {
   const navigation = useNavigation();

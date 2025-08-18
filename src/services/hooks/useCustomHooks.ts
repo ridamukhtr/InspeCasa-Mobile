@@ -6,6 +6,7 @@ import {setUnreadCount} from '../../store/slices/notificationsSlice';
 import firestore from '@react-native-firebase/firestore';
 import {PermissionsAndroid, Platform} from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
+import {STRIPE_SECRET_KEY, STRIPE_PUBLISHABLE_KEY} from '../../../env';
 
 export const useFormattedDate = () => {
   const formatDisplayDate = (date: moment.MomentInput): string => {
@@ -178,4 +179,9 @@ export const requestStoragePermission = async () => {
     }
   }
   return true;
+};
+
+export const stripeKeys = {
+  secret: STRIPE_SECRET_KEY,
+  publishable: STRIPE_PUBLISHABLE_KEY,
 };

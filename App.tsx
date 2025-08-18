@@ -8,12 +8,13 @@ import AppNavigator from './src/navigation/navigation';
 import Colors from './src/utilities/constants/colors';
 import { PersistGate } from 'redux-persist/integration/react';
 import { StripeProvider, } from '@stripe/stripe-react-native';
+import { stripeKeys } from './src/services/hooks/useCustomHooks';
 
 function App() {
 
   return (
     <StripeProvider
-      publishableKey="pk_test_51Rh40D6zBQ3VWKCSLrIKhJxrgH3tRZWLgsbvhj1GUlx2kUyurpctma4Qiil7CNin1Hr12vFNRlMO7JLPvbhd4jM100NjuUtaNf"
+      publishableKey={stripeKeys.publishable}
     >
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
