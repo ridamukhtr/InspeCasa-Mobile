@@ -9,7 +9,6 @@ import {setCredentials} from '../../store/slices/authSlice';
 import {useDispatch} from 'react-redux';
 import {AccessToken, LoginManager} from 'react-native-fbsdk-next';
 import {SUBSCRIPTION_PLANS} from '../../data/Subscription';
-import {stripeKeys} from './useCustomHooks';
 
 export const useAuthHook = () => {
   const navigation = useNavigation();
@@ -19,7 +18,8 @@ export const useAuthHook = () => {
   const [googleLoading, setGoogleLoading] = useState(false);
   useEffect(() => {
     GoogleSignin.configure({
-      webClientId: stripeKeys.webClientId,
+      webClientId:
+        '654803257325-vpbjjo4eqm97btilkhrpkd3qr698tmq6.apps.googleusercontent.com',
     });
   }, []);
 
