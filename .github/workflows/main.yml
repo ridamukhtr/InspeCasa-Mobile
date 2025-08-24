@@ -19,20 +19,16 @@ jobs:
           node-version: 18.x
 
       - name: Install Dependencies
-        run: |
-          cd inspecasa
-          npm install
+        run: npm install
 
       - name: Build Project
-        run: |
-          cd inspecasa
-          npm run build
+        run: npm run build
 
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v4
         with:
           name: production-file
-          path: ./inspecasa/build
+          path: ./build
 
   # Deploy Job
   deploy:
