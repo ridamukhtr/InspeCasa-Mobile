@@ -19,7 +19,7 @@ jobs:
           node-version: 18.x
 
       - name: Install Dependencies
-        run: yarn install
+        run: npm install --legacy-peer-deps
 
       - name: Build Project
         run: npm run build
