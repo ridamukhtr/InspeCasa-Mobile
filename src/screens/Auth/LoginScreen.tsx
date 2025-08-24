@@ -220,7 +220,7 @@ const LoginScreen = () => {
                   <Google />
                 )}
               </TouchableOpacity>
-              <TouchableOpacity
+              {/* <TouchableOpacity
                 onPress={handleFacebookLogin}
                 activeOpacity={0.8} style={[globalStyles.socialButtonWrapper, { backgroundColor: "#1978ED" }]}>
                 {facebookLoading ? (
@@ -228,7 +228,7 @@ const LoginScreen = () => {
                 ) : (
                   <Facebook />
                 )}
-              </TouchableOpacity>
+              </TouchableOpacity> */}
             </View>
             <View style={globalStyles.accountNavigationWrapper}>
               <CustomText style={globalStyles.statusText}>
